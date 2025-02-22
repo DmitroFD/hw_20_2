@@ -1,16 +1,16 @@
-const itemsOfGallery = document.querySelectorAll("img");
+const imgElement = document.querySelectorAll("img");
 
 let total = 0;
-itemsOfGallery[total].style.display = "block";
+imgElement[total].style.display = "block";
 
 window.addEventListener("keydown", (event) => {
   if (event.code === "ArrowRight") {
-    itemsOfGallery[total].style.display = "none"; // Приховуємо поточний елемент
+    imgElement[total].style.display = "none"; // Приховуємо поточний елемент
     total += 1;
-    if (total >= itemsOfGallery.length) {
+    if (total >= imgElement.length) {
       total = 0; // Повертаємось до першого елемента
     }
-    itemsOfGallery[total].style.display = "block"; // Показуємо наступний елемент
+    imgElement[total].style.display = "block"; // Показуємо наступний елемент
   }
 });
 
