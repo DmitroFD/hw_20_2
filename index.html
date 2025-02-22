@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея Зображень</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+}
+
+.image {
+  width: 700px;
+  height: 600px;
+  object-fit: cover;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+img {
+  display: none;
+}
+
+</style>
+<body>
+  <div style="display: flex;">
+  <ul class="gallery">
+    <li>
+      <img class="image" src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
+    </li>
+    <li>
+      <img class="image" src="https://images.pexels.com/photos/11815778/pexels-photo-11815778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
+    </li>
+    <li>
+      <img class="image" src="https://images.pexels.com/photos/6195166/pexels-photo-6195166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
+    </li>
+    <li>
+      <img class="image" src="https://images.pexels.com/photos/6957926/pexels-photo-6957926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
+    </li>
+    <li>
+      <img class="image" src="https://images.pexels.com/photos/15520825/pexels-photo-15520825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
+    </li>
+  </ul>
+
+  <h2 style="color: green;">Натисни Клавішу в право на клавіатурі</h2>
+
+  <div id="controls">
+    <input type="number" id="amount" />
+    <button type="button" data-action="create">Створити</button>
+    <button type="button" data-action="remove">Очистити</button>
+</div>
+<div id="boxes"></div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
